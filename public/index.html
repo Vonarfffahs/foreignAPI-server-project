@@ -3,11 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Universities of Ukraine</title>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Universities of Ukraine</h1>
-    <ul id="universities-list"></ul>
-    <script src="script.js"></script>
+    <header>
+        <h1>Universities of Ukraine</h1>
+    </header>
+    <main>
+        <section>
+            <table id="unis" summary="This table shows the universities of Ukraine">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Domains</th>
+                        <th>Web pages</th>
+                    </tr>
+                </thead>
+                <tbody id="unis-content">
+                    <tr>
+                        <td>KPI</td>
+                        <td><img src="https://www.musa.in.ua/sites/default/files/styles/600x450/public/2020-03/kpi%20photo%20%288%29.jpg?itok=iq41n5Ki" alt="KPI"></td>
+                        <td>kpi.ua</td>
+                        <td>kpi.ua</td>
+                    </tr>
+                    <tr>
+                        <td>KPI</td>
+                        <td><img src="https://www.musa.in.ua/sites/default/files/styles/600x450/public/2020-03/kpi%20photo%20%288%29.jpg?itok=iq41n5Ki" alt="KPI"></td>
+                        <td>kpi.ua</td>
+                        <td>kpi.ua</td>
+                    </tr>
+                    <tr>
+                        <td>KPI</td>
+                        <td><img src="https://www.musa.in.ua/sites/default/files/styles/600x450/public/2020-03/kpi%20photo%20%288%29.jpg?itok=iq41n5Ki" alt="KPI"></td>
+                        <td>kpi.ua</td>
+                        <td>kpi.ua</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="4" class="text-center">Data retrieved from <a href="http://universities.hipolabs.com" target="_blank">universities Hipolabs</a> and <a href="http://www.worldometers.info/world-population/population-by-country/" target="_blank">...</a>.</td>
+                </tfoot>
+            </table>
+            <ul id="universities-list"></ul>
+        </section>
+    </main>
 </body>
 </html>
