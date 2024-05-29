@@ -1,7 +1,9 @@
 const express = require('express');
 const request = require('request');
+require('dotenv').config();
 
-const PORT = 3000;
+const PORT = process.env.PORT;
+const apiKey = process.env.API_KEY;
 
 const app = express();
 
@@ -51,3 +53,5 @@ app.use('/is-21fiot-22-056', (req, res) => {
 app.listen(PORT, () => {
     console.log(`App listening on port: ${PORT}`);
 });
+
+console.log(apiKey);
